@@ -13,7 +13,7 @@ html = requests.get(url).content
 soup = BeautifulSoup(html, "html.parser")
 
 
-# scraping the necessary infos
+# scrapping the necessary infos
 
 liste = soup.find("tbody",{"class":"lister-list"}).find_all("tr",limit=50)
 
